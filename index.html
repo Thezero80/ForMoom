@@ -10,9 +10,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <link rel="stylesheet" href="./style.css">
+  <script>
+
+    // Función para detectar si el dispositivo es una PC
+    function esPC() {
+      const userAgent = navigator.userAgent;
+      const mobileKeywords = ['Mobi', 'Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone'];
+
+      for (let i = 0; i < mobileKeywords.length; i++) {
+        if (userAgent.indexOf(mobileKeywords[i]) !== -1) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    // Función para redireccionar en caso de ser PC
+    function redireccionarSiEsPC() {
+      if (esPC()) {
+        window.location.href = 'error.html';
+      }
+    }
+  </script>
 </head>
 
-<body>
+<body onload="redireccionarSiEsPC()">
   <div class="valentines-day">
     <div class="envelope"></div>
     <div class="heart"></div>

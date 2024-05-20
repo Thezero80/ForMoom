@@ -2,7 +2,7 @@
 
 #card {
   height: 500px;
-  width: 800px;
+  width: 200px;
   margin: 5em auto;
   position: fixed;
   top: -15px;
@@ -71,7 +71,7 @@
 .side {
   background: #eee;
   height: 570px;
-  width: 400px;
+  width: 410px;
   padding: 10px;
 }
 
