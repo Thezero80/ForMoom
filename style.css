@@ -208,14 +208,12 @@ body {
 
 .text {
   position: absolute;
-  display: flex;
-  flex-direction: column;
   font-family: arial;
   letter-spacing: 5px;
   text-align: center;
   color: white;
   z-index: 2;
-  top: 80px;
+  top: 60px;
   left: 15px;
   transition: .5s;
 }
